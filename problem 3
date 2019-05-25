@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string>
+#include <conio.h>
+
+
+using namespace std;
+ 
+void Reverse(string name);
+ 
+int main()
+{
+	string name="";
+ 
+	cout << "Enter name: " << endl;
+	getline (cin,name);
+ 
+	cout<<"nYour name reversed is: ";
+ 
+	Reverse (name);
+	cout << endl;
+ 
+	return 0;
+}
+ 
+void Reverse(string name)
+{
+	if (name == "");
+	{
+		return;
+	}
+	else
+	{
+		Reverse(name.substr(1));			
+		cout << name.at(0) << endl;
+	}
+  _getch();
+  return 0;
+}
