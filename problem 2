@@ -3,8 +3,9 @@
 
 using namespace std;
 
-const int Province = 3;
 const int Week = 7;
+const int Province = 3;
+
 
 int main()
 {
