@@ -8,7 +8,7 @@ const int Week = 7;
 
 int main()
 {
-    int Temp[Province][Week];
+    int Temperature[Province][Week];
 
     cout << "Enter temperature for a week for each Province A, B and C" << endl;
 
@@ -16,8 +16,8 @@ int main()
     {
         for(int j = 0; j < Week; ++j)
         {
-            cout << "Province " << i + 1 << ", Day " << j + 1 << " : ";
-            cin >> temperature[i][j];
+            cout << "Province " << i + 1 << ", Day " << j + 1 << " : " << endl;
+            cin >> Temperature[i][j];
         }
     }
 
@@ -27,7 +27,7 @@ int main()
     {
         for(int j = 0; j < Week; ++j)
         {
-            cout << "Province " << i + 1 << ", Day " << j + 1 << " = " << temperature[i][j] << endl;
+            cout << "Province " << i + 1 << ", Day " << j + 1 << " = " << Temperature[i][j] << endl;
         }
     }
     _getch();
